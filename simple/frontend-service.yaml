@@ -6,10 +6,9 @@ metadata:
     app: guestbook
     tier: frontend
 spec:
+  type: NodePort
   ports:
-  - port: 3306
-    protocol: TCP
-  type: ClusterIP
+  - port: 80
   selector:
     app: guestbook
     tier: frontend
